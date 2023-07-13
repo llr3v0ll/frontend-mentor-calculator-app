@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Calculator app</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body class="theme1body">
+    <main>
+      <header>
+        <p>calc</p>
+        <div class="themeselect">
+          <p>THEME</p>
+          <div id="toggle-theme">
+            <i class="indicator" id="indicator"></i>
+          </div>
+          <div class="theme-numbers">
+            <p>1</p>
+            <p>2</p>
+            <p>3</p>
+          </div>
+        </div>
+      </header>
+      <div class="screen">
+        <h1 id="screen-show">-</h1>
+      </div>
+      <div class="controls">
+        <div class="first-row row">
+          <button id="num7" value="7"><h1>7</h1></button>
+          <button id="num8" value="8"><h1>8</h1></button>
+          <button id="num9" value="9"><h1>9</h1></button>
+          <button id="delbut" class="del"><h1>DEL</h1></button>
+        </div>
+        <div class="second-row row">
+          <button id="num4" value="4"><h1>4</h1></button>
+          <button id="num5" value="5"><h1>5</h1></button>
+          <button id="num6" value="6"><h1>6</h1></button>
+          <button id="addbut"><h1>+</h1></button>
+        </div>
+        <div class="third-row row">
+          <button id="num1" value="1"><h1>1</h1></button>
+          <button id="num2" value="2"><h1>2</h1></button>
+          <button id="num3" value="3"><h1>3</h1></button>
+          <button id="decreasebut"><h1>-</h1></button>
+        </div>
+        <div class="forth-row row">
+          <button id="decimalbut"><h1>&#8901;</h1></button>
+          <button id="num0" value="0"><h1>0</h1></button>
+          <button id="dividebut"><h1>/</h1></button>
+          <button id="multiplicationbut"><h1>&#215;</h1></button>
+        </div>
+        <div class="fifth-row row">
+          <button id="reset" class="reset"><h1>RESET</h1></button>
+          <button id="result" class="result"><h1>=</h1></button>
+        </div>
+      </div>
+    </main>
+    <div class="attribution">
+      <p class="footertext">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#" target="_blank">Stoica Claudiu</a>.
+      </p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,324 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-size: 32px;
+  font-family: "League Spartan", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+}
+main {
+  height: 700px;
+  width: 540px;
+}
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+.themeselect {
+  display: flex;
+  position: relative;
+  font-size: 1rem;
+  align-items: center;
+}
+.theme-numbers {
+  display: flex;
+  position: absolute;
+  top: -15px;
+  left: 81px;
+  width: 70px;
+  justify-content: space-around;
+}
+#toggle-theme {
+  width: 70px;
+  height: 25px;
+
+  border-radius: 25px;
+  margin-left: 2rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 3px 5px 2px 5px;
+  cursor: pointer;
+}
+.indicator {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  left: 5px;
+}
+/* SCREEN */
+.screen {
+  width: 100%;
+
+  margin-bottom: 1.5rem;
+  text-align: right;
+  border-radius: 10px;
+  overflow: auto;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+/* KEYPAD */
+.controls {
+  height: 480px;
+  box-sizing: border-box;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border-radius: 10px;
+}
+.row {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+button {
+  width: 100px;
+  height: 60px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.fifth-row button {
+  width: 225px;
+}
+/* THEME 1 */
+.theme1body {
+  background-color: hsl(222, 26%, 31%);
+  transition: 0.5s;
+}
+.theme1body header {
+  color: white;
+  transition: 0.5s;
+}
+.theme1body #toggle-theme {
+  background-color: hsl(223, 31%, 20%);
+  transition: 0.5s;
+}
+.theme1body .indicator {
+  background-color: hsl(6, 63%, 50%);
+  transition: 0.5s;
+}
+.theme1body .screen {
+  background-color: hsl(224, 36%, 15%);
+  color: white;
+  transition: 0.5s;
+}
+.theme1body .controls {
+  background-color: hsl(223, 31%, 20%);
+  transition: 0.5s;
+}
+.theme1body button {
+  background-color: hsl(30, 25%, 89%);
+  box-shadow: 0px 4px hsl(28, 16%, 65%);
+  color: hsl(221, 14%, 31%);
+  transition: 0.5s;
+}
+.theme1body button:active {
+  background-color: hsl(0, 0%, 100%);
+}
+.theme1body .del {
+  background-color: hsl(225, 21%, 49%);
+  box-shadow: 0 4px hsl(224, 28%, 35%);
+  color: white;
+  transition: 0.5s;
+}
+.theme1body .reset {
+  background-color: hsl(225, 21%, 49%);
+  box-shadow: 0 4px hsl(224, 28%, 35%);
+  color: white;
+  transition: 0.5s;
+}
+.theme1body .del:active {
+  background-color: #a2b3e1;
+}
+.theme1body .reset:active {
+  background-color: #a2b3e1;
+}
+.theme1body .result {
+  background-color: hsl(6, 63%, 50%);
+  box-shadow: 0 4px hsl(6, 70%, 34%);
+  color: hsl(60, 10%, 19%);
+  transition: 0.5s;
+}
+.theme1body .result:active {
+  background-color: #f96c5b;
+}
+.theme1body .footertext {
+  color: white;
+  transition: 0.5s;
+}
+.theme1body a {
+  color: hsl(221, 100%, 85%);
+  transition: 0.5s;
+}
+/* THEME2 */
+.theme2body {
+  background-color: hsl(0, 0%, 90%);
+  transition: 0.5s;
+}
+.theme2body header {
+  color: hsl(60, 10%, 19%);
+  transition: 0.5s;
+}
+.theme2body #toggle-theme {
+  background-color: hsl(0, 5%, 81%);
+  transition: 0.5s;
+}
+.theme2body .indicator {
+  background-color: hsl(25, 98%, 40%);
+  transition: 0.5s;
+}
+.theme2body .screen {
+  background-color: hsl(0, 0%, 93%);
+  color: hsl(60, 10%, 19%);
+  transition: 0.5s;
+}
+.theme2body .controls {
+  background-color: hsl(0, 5%, 81%);
+  transition: 0.5s;
+}
+.theme2body button {
+  background-color: hsl(45, 7%, 89%);
+  box-shadow: 0px 4px hsl(35, 11%, 61%);
+  color: hsl(221, 14%, 31%);
+  transition: 0.5s;
+}
+.theme2body button:active {
+  background-color: hsl(0, 0%, 100%);
+}
+.theme2body .del {
+  background-color: hsl(185, 42%, 37%);
+  box-shadow: 0 4px hsl(185, 58%, 25%);
+  color: white;
+  transition: 0.5s;
+}
+.theme2body .reset {
+  background-color: hsl(185, 42%, 37%);
+  box-shadow: 0 4px hsl(185, 58%, 25%);
+  color: white;
+  transition: 0.5s;
+}
+.theme2body .del:active {
+  background-color: #62b5bd;
+}
+.theme2body .reset:active {
+  background-color: #62b5bd;
+}
+.theme2body .result {
+  background-color: hsl(25, 98%, 40%);
+  box-shadow: 0 4px hsl(25, 99%, 27%);
+  color: white;
+  transition: 0.5s;
+}
+.theme2body .result:active {
+  background-color: #ff8b38;
+}
+.theme2body .footertext {
+  color: black;
+  transition: 0.5s;
+}
+.theme2body a {
+  color: hsl(185, 42%, 37%);
+  transition: 0.5s;
+}
+/* THEME 3 */
+.theme3body {
+  background-color: hsl(268, 75%, 9%);
+  transition: 0.5s;
+}
+.theme3body header {
+  color: hsl(52, 100%, 62%);
+  transition: 0.5s;
+}
+.theme3body #toggle-theme {
+  background-color: hsl(268, 71%, 12%);
+  transition: 0.5s;
+}
+.theme3body .indicator {
+  background-color: hsl(176, 100%, 44%);
+  transition: 0.5s;
+}
+.theme3body .screen {
+  background-color: hsl(268, 71%, 12%);
+  color: hsl(52, 100%, 62%);
+  transition: 0.5s;
+}
+.theme3body .controls {
+  background-color: hsl(268, 71%, 12%);
+  transition: 0.5s;
+}
+.theme3body button {
+  background-color: hsl(268, 47%, 21%);
+  box-shadow: 0px 4px hsl(290, 70%, 36%);
+  color: hsl(52, 100%, 62%);
+  transition: 0.5s;
+}
+.theme3body button:active {
+  background-color: #6b34ac;
+}
+.theme3body .del {
+  background-color: hsl(281, 89%, 26%);
+  box-shadow: 0 4px hsl(285, 91%, 52%);
+  color: white;
+  transition: 0.5s;
+}
+.theme3body .reset {
+  background-color: hsl(281, 89%, 26%);
+  box-shadow: 0 4px hsl(285, 91%, 52%);
+  color: white;
+  transition: 0.5s;
+}
+.theme3body .del:active {
+  background-color: #8631b0;
+}
+.theme3body .reset:active {
+  background-color: #8631b0;
+}
+.theme3body .result {
+  background-color: hsl(176, 100%, 44%);
+  box-shadow: 0 4px hsl(177, 92%, 70%);
+  color: hsl(198, 20%, 13%);
+  transition: 0.5s;
+}
+.theme3body .result:active {
+  background-color: #94fff9;
+}
+.theme3body .footertext {
+  color: white;
+  transition: 0.5s;
+}
+.theme3body a {
+  color: hsl(52, 100%, 62%);
+  transition: 0.5s;
+}
+/* PHONE */
+@media (max-width: 500px) {
+  main {
+    width: 327px;
+    height: 700px;
+  }
+  button {
+    width: 60px;
+  }
+  #reset {
+    width: 132px;
+  }
+  #result {
+    width: 132px;
+  }
+}
